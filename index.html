@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤓Coding Quiz Game</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Coding Quiz Game</h1>
+        <h2>Can you beat your high score in time?</h2>   
+    </header>
+
+    <main>
+        <section id="question-card">
+            <h3> <span id="question-number"> </span>
+                <span id="question-field"> Click to begin playing! </span>
+            </h3>
+            <br>
+            <div id = "answer-section">
+                <button id="start">Start Game</button> 
+            </div>
+            <br>
+            <br>
+            <p id = note>
+                Think carefully, because if you get it wrong... your timer <em>looses</em> seconds. Harsh, right?
+            </p>
+        </section>  
+        
+        <aside>
+            <h2 id = "time-message"> Seconds Remaining: 
+                <span id="countdown"> 20 </span>
+            </h2>
+            <br>
+            <h2 id="score-message"></h2>
+            <div id="input-wrapper">
+                <input type="text" id="input-field" value="Your initials...">
+            </div>
+            <h3 id = "right-display"> </h3>
+            <h3 id = "wrong-display"> </h3>
+
+            <div id= "score-card">
+                <h2>Past Scores</h2>
+                <ul id="past-score-list">
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer> 
+        <p>
+            Made with ❤️
+          </p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
